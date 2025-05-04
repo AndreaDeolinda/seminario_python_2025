@@ -31,8 +31,7 @@ def inicializarVariables(user, password):
 def llamarServicioSet():
     user = request.json.get('user')
     password = request.json.get('password')
-    rol = request.json.get('rol')
-    print(rol)
+  
     
     codRes, menRes, accion = inicializarVariables(user, password)
 
@@ -43,3 +42,4 @@ def llamarServicioSet():
         'accion': accion
     }
     return jsonify(salida)
+

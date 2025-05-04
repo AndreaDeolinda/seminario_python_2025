@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Mi Dashboard</h1>
+
+        <div class="card">
+            <h2>Usuarios</h2>
+            <p>{{ datos.usuarios }}</p>
+        </div>
+
+        <div class="card">
+            <h2>Ventas</h2>
+            <p>${{ datos.ventas }}</p>
+        </div>
+    </div>
+
+            <div class="card">
+            <h2>Visitas</h2>
+            <p>{{ datos.visitas }}</p>
+        </div>
+    </div>
+</body>
+</html>
+
