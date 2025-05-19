@@ -7,7 +7,6 @@ app = Flask(__name__)
 
 ## Servicios REST
 app.register_blueprint(login)
-app.register_blueprint(login2)
 
 @app.route('/', methods=['GET'])
 def hello():
